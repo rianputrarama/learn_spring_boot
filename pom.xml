@@ -27,11 +27,11 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.23</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>org.modelmapper</groupId>
             <artifactId>modelmapper</artifactId>
@@ -58,10 +58,10 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.11.4</version>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>-->
+        </dependency>
     </dependencies>
 
     <build>

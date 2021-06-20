@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Bean;
 import javax.annotation.Resource;
 
 @SpringBootApplication
-public class SpringcourseApplication implements CommandLineRunner {
-
+public class SpringcourseApplication  {
+// implements CommandLineRunner
     @Bean
     public ModelMapper modelMapper() {
         return new ModelMapper();
@@ -24,8 +24,8 @@ public class SpringcourseApplication implements CommandLineRunner {
         SpringApplication.run(SpringcourseApplication.class, args);
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        storageService.init();
-    }
+//    @Override
+//    public void run(String... args) throws Exception {
+//        storageService.init();
+//    }
 }
