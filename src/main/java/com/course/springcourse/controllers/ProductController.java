@@ -31,6 +31,7 @@ public class ProductController {
         return productService.save(product);
     }*/
 
+    // without class dto
     @PostMapping
     public ResponseEntity<ResponseData<Product>> create(@Valid @RequestBody Product product, Errors errors) {
         ResponseData<Product> responseData = new ResponseData<>();
