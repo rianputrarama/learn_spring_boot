@@ -1,7 +1,9 @@
 package com.course.springcourse.controllers;
 
 import com.course.springcourse.dto.ResponseData;
+import com.course.springcourse.dto.SupplierData;
 import com.course.springcourse.model.entities.Product;
+import com.course.springcourse.model.entities.Supplier;
 import com.course.springcourse.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -67,5 +69,10 @@ public class ProductController {
     @DeleteMapping("/{id}")
     public void removeOne(@PathVariable("id") Long id) {
         productService.removeOne(id);
+    }
+
+    @PostMapping("/{id}")
+    public void addSupplier(@RequestBody Supplier supplier, @PathVariable("id") Long productId) {
+        productService.addSupplier(supplier, productId);
     }
 }
